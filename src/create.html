@@ -1,0 +1,93 @@
+<!DOCTYPE html> @@include('components/page-blocks/_head.html',{ "lang":"ru", "title":"Главная", "description":"", "keywords":"",})
+
+<body>
+    <div class="wrapper">
+        @@include('components/page-blocks/_header.html', {"auth":"true"})
+        <div class="layout">
+
+            <div class="container">
+                <div class="layout__wrap">
+                    <aside class="layout__left">
+                        <div class="sidebar">
+                            <div class="sidebar__footer">
+                                @@include('components/layout/_sidebar-footer.html')
+                            </div>
+                        </div>
+                    </aside>
+
+                    <main class="content">
+                        <div class="create">
+                            <div class="create__top">
+                                <div class="create__select">
+                                    <div class="create__select-current">
+                                        <span>Выберите категорию</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="7.92" height="4.646" viewBox="0 0 7.92 4.646">
+                                            <path id="Geek" d="M13.83,8.7a.666.666,0,0,0-.933,0L10.031,11.57,7.166,8.7a.666.666,0,0,0-.933.933l3.332,3.332a.666.666,0,0,0,.933,0L13.83,9.637a.666.666,0,0,0,0-.933Z" transform="translate(-6.1 -8.514)"/>
+                                        </svg>
+                                    </div>
+                                    <div class="create__select-dropdown">
+                                        <div class="create__select-search">
+                                            <input type="text" placeholder="Поиск по порталу">
+                                        </div>
+
+                                        <div class="create__select-group">
+                                            <div class="create__select-title">Мои сообщества</div>
+                                            <a href="" class="create__select-item">
+                                                <img src="img/avatar4.webp" alt="">
+                                                <span>Karate.ru: MMA и Бо...</span>
+                                            </a>
+                                            <a href="" class="create__select-item">
+                                                <img src="img/avatar2.webp" alt="">
+                                                <span>ACA - Absolute Cha...</span>
+                                            </a>
+                                            <button class="create__select-btn mbtn">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+                                                    <path id="Geek" d="M5,5V0H7V5h5V7H7v5H5V7H0V5Z" fill="#ff6332" fill-rule="evenodd"/>
+                                                </svg>
+                                                <span>Создать сообщество</span>
+                                            </button>
+                                        </div>
+
+                                        <div class="create__select-group">
+                                            <div class="create__select-title">Категории</div>
+                                            <div class="create__select-item create__select-category">
+                                                <img src="img/category.webp" alt="">
+                                                <span>Бокс</span>
+                                            </div>
+                                            <div class="create__select-item create__select-category">
+                                                <img src="img/category2.webp" alt="">
+                                                <span>Кулачные бои</span>
+                                            </div>
+                                            <div class="create__select-item create__select-category">
+                                                <img src="img/category3.webp" alt="">
+                                                <span>Греплинг</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="create__by">
+                                    <img src="img/avatar.svg" alt="">
+                                    <span>Владимир Горячев</span>
+                                </div>
+                                <div class="create__badge create__badge--disabled">Эксклюзив</div>
+                            </div>
+
+                        </div>
+                    </main>
+
+                    <aside class="layout__right">
+
+                    </aside>
+                </div>
+            </div>
+
+
+        </div>
+        @@include('components/page-blocks/_footer.html')
+    </div>
+
+
+    @@include('components/page-blocks/_scripts.html')
+</body>
+
+</html>

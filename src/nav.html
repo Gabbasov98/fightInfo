@@ -1,0 +1,71 @@
+<!DOCTYPE html> @@include('components/page-blocks/_head.html',{ "lang":"ru", "title":"Главная", "description":"", "keywords":"",})
+
+
+<style>
+    .wrapper a {
+        font-size: 30px;
+        text-transform: capitalize;
+    }
+    
+    .wrapper button {
+        margin-bottom: 25px;
+        width: 300px;
+        height: 45px;
+    }
+</style>
+
+<body>
+
+    <div class="wrapper" style="padding: 50px;">
+        <a href="index.html" style="display: block; margin-bottom: 20px;">
+            Главная
+        </a>
+        <a href="category.html" style="display: block; margin-bottom: 20px;">
+            Рубрикатор
+        </a>
+        <a href="favourite.html" style="display: block; margin-bottom: 20px;">
+            Избранное
+        </a>
+        <a href="category2.html" style="display: block; margin-bottom: 20px;">
+            Категория
+        </a>
+        <a href="detail.html" style="display: block; margin-bottom: 20px;">
+            Детальная публикация
+        </a>
+        <a href="community.html" style="display: block; margin-bottom: 20px;">
+            Мои сообщества
+        </a>
+        <a href="community-feed.html" style="display: block; margin-bottom: 20px;">
+            Публикации сообщества
+        </a>
+        <a href="create.html" style="display: block; margin-bottom: 20px;">
+            Написание поста
+        </a>
+        <a href="about.html" style="display: block; margin-bottom: 20px;">
+            О проекте
+        </a>
+
+
+
+
+        <button style="border: 2px solid #000;margin-bottom: 20px;" data-bs-toggle="modal" data-bs-target="#authModal">
+            Вход  |  Регистрация
+        </button>
+        <button style="border: 2px solid #000;margin-bottom: 20px;" data-bs-toggle="modal" data-bs-target="#profileModal">
+            Ваш профиль
+        </button>
+        <button style="border: 2px solid #000;margin-bottom: 20px;" data-bs-toggle="modal" data-bs-target="#communityModal">
+            Новое сообщество
+        </button>
+        <button style="border: 2px solid #000;margin-bottom: 20px;" data-bs-toggle="modal" data-bs-target="#communityModal2">
+            Новое сообщество 2
+        </button>
+
+    </div>
+
+    @@include('components/_popups.html')
+    <!--  -->
+    @@include('components/page-blocks/_scripts.html')
+</body>
+
+</html>

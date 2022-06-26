@@ -1,0 +1,12 @@
+@import "../vars.scss";
+.detail {
+    width: calc(100% + 96px);
+    margin-left: -48px;
+    .news-card {
+        padding: 24px 48px;
+    }
+}
+
+.same-news {
+    margin-top: 58px;
+}

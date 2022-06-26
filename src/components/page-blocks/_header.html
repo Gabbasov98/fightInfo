@@ -1,0 +1,41 @@
+<header class='header'>
+    <div class='container'>
+        <div class='header__inner'>
+            <div class="header__left">
+                <a href="" class="header__logo">
+                    <img src="img/logo.svg" alt="">
+                </a>
+            </div>
+            <div class="header__center">
+                <div class="header__search">
+                    <input type="text" placeholder="Поиск по порталу">
+                </div>
+            </div>
+            <div class="header__right">
+                <button class="header__create mbtn">
+                    <img src="img/plus.svg" alt="">
+                    <span>Создать</span>
+                </button> @@if(auth === "true") {
+                <div class="header__user">
+                    <button class="header__user-toggler mbtn">
+                        <img src="img/avatar.svg" alt="">
+                        <span>Владимир Горячев</span>
+                    </button>
+                    <div class="header__user-dropdown dropdown">
+                        <a href="" class="dropdown__item">Ваш профиль</a>
+                        <a href="" class="dropdown__item">Создать запись</a>
+                        <a href="" class="dropdown__item">Сообщество</a>
+                        <a href="" class="dropdown__item">Избранное</a>
+                        <a href="" class="dropdown__item">Выйти</a>
+                    </div>
+                </div>
+
+                } @@if(auth !== "true"){
+                <button class="header__auth-btn mbtn">
+                    <img src="img/user.svg" alt="">
+                    <span>Вход  |  Регистрация</span>
+                </button> }
+            </div>
+        </div>
+    </div>
+</header>

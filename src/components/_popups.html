@@ -1,0 +1,175 @@
+<div class="modal fade" id="authModal" aria-hidden="true">
+    <div class="modal-dialog">
+        <button type="button" class="modal__close" data-bs-dismiss="modal" aria-label="Close">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16.972" height="16.971" viewBox="0 0 16.972 16.971">
+                <g transform="translate(1.414 1.414)">
+                  <line y2="20" transform="translate(14.143 0) rotate(45)" fill="none" stroke="#c1c1c1" stroke-linecap="round" stroke-width="2"/>
+                  <line x2="20" transform="translate(0.002) rotate(45)" fill="none" stroke="#c1c1c1" stroke-linecap="round" stroke-width="2"/>
+                </g>
+            </svg>
+        </button>
+
+        <div class="modal__tabs">
+            <div class="modal__tab modal__tab--active display2" data-tabs-path="1">Вход</div>
+            <div class="modal__tab display2" data-tabs-path="2">Регистрация</div>
+        </div>
+
+        <form action="" class="form-validate modal__form modal__tab-content modal__tab-content--active" data-tabs-path="1">
+            <fieldset class='form-group form-group--required'>
+                <input type='email' placeholder="Электронная почта" autocomplete="off" />
+            </fieldset>
+            <fieldset class='form-group form-group--required'>
+                <input type='password' placeholder="Пароль" autocomplete="off" />
+            </fieldset>
+            <button disabled class="js-submit modal__form-btn mbtn mbtn-primary">Войти</button>
+        </form>
+        <form action="" class="form-validate modal__form modal__tab-content" data-tabs-path="2">
+            <fieldset class='form-group form-group--required'>
+                <input type='email' placeholder="Электронная почта" autocomplete="off" />
+            </fieldset>
+            <fieldset class='form-group form-group--required'>
+                <input type='password' placeholder="Пароль" autocomplete="off" />
+            </fieldset>
+            <fieldset class='form-group form-group--required'>
+                <input type='text' placeholder="fight-info.ru/username" autocomplete="off" />
+            </fieldset>
+            <button disabled class="js-submit modal__form-btn mbtn mbtn-primary">Зарегистрироваться</button>
+        </form>
+
+        <div class="modal__socials">
+            <a href="" class="modal__socials-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+                    <path d="M20,0A20,20,0,1,0,40,20,20,20,0,0,0,20,0Zm5.28,11.987a10.071,10.071,0,0,0-2.853.136c-1.332.492-1.364,1.643-1.364,2.741v2.242h4.074l-.6,4.288H21.064V31.979h-4.6V21.394H12.636V17.106h3.826V13.469a5.2,5.2,0,0,1,4.731-5.414,16.241,16.241,0,0,1,4.087.335Z" fill="#2f4694"/>
+                </svg>
+            </a>
+            <a href="" class="modal__socials-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="39.998" viewBox="0 0 40 39.998">
+                    <path d="M23.443,4.155a20,20,0,1,0,20,20A20,20,0,0,0,23.443,4.155ZM25.336,29.41c-2.073,2.916-6.234,3.767-9.48,2.518a8.335,8.335,0,0,1,3.019-16.1,8.443,8.443,0,0,1,5.565,2.057,29.665,29.665,0,0,1-2.112,2.188c-1.894-1.309-4.587-1.683-6.48-.171a5.334,5.334,0,0,0-.227,8.314c2.534,2.3,7.324,1.158,8.024-2.363-1.587-.024-3.179,0-4.766-.052,0-.947-.008-1.894,0-2.84,2.653-.008,5.307-.012,7.964.008A9.551,9.551,0,0,1,25.336,29.41Zm11.441-4.077c-.792.008-1.583.012-2.379.02q-.012,1.193-.016,2.379H32.011C32,26.94,32,26.148,32,25.356l-2.379-.024V22.966c.792-.008,1.583-.012,2.379-.016q.006-1.193.02-2.379h2.367c0,.792.008,1.587.016,2.379.792.008,1.587.008,2.379.016C36.777,23.753,36.777,24.545,36.777,25.333Z" transform="translate(-3.443 -4.155)" fill="#ea4335"/>
+                </svg>
+            </a>
+            <a href="" class="modal__socials-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+                    <path d="M20,0A20,20,0,1,0,40,20,20,20,0,0,0,20,0ZM30.4,12.651,26.843,29.609a1.251,1.251,0,0,1-1.967.749l-5.167-3.817-3.13,2.953a.424.424,0,0,1-.6-.023l-.067-.074.544-5.264,9.8-8.957a.262.262,0,0,0-.317-.415L13.4,22.7,8,20.883A.734.734,0,0,1,7.975,19.5L29.1,11.543A.972.972,0,0,1,30.4,12.651Z" fill="#08c"/>
+                </svg>
+            </a>
+            <a href="" class="modal__socials-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+                    <path d="M20,0A20,20,0,1,0,40,20,20,20,0,0,0,20,0ZM30.653,26.789H28.115a1.829,1.829,0,0,1-1.431-.687,12.365,12.365,0,0,0-3.835-3.378.6.6,0,0,0-.853.541v2.51a1.014,1.014,0,0,1-1.014,1.014H19.81c-1.526,0-4.813-.929-7.431-4.744a25.886,25.886,0,0,1-3.806-7.811.8.8,0,0,1,.775-1.023h2.567a1.19,1.19,0,0,1,1.141.849c.477,1.6,1.714,5.041,3.9,6.757a.452.452,0,0,0,.732-.355V16.441a3.457,3.457,0,0,0-.882-2.211.615.615,0,0,1,.465-1.019h3.958A.769.769,0,0,1,22,13.98V19.4a.427.427,0,0,0,.675.348,8.09,8.09,0,0,0,1.921-2.14,35.629,35.629,0,0,0,2.04-3.793,1.051,1.051,0,0,1,.95-.6h2.8A.687.687,0,0,1,31,14.2a31.488,31.488,0,0,1-3.378,5.542,1.084,1.084,0,0,0,.127,1.527,19.174,19.174,0,0,1,3.583,4.276.805.805,0,0,1-.676,1.241Z" fill="#07f"/>
+                </svg>
+            </a>
+            <a href="" class="modal__socials-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+                    <path d="M23.722,5.155a20,20,0,1,0,20,20A20,20,0,0,0,23.722,5.155Zm1.147,8.11a5.632,5.632,0,0,1,3.707-1.905,5.547,5.547,0,0,1-1.31,4.018,4.671,4.671,0,0,1-3.734,1.781A5.277,5.277,0,0,1,24.869,13.265Zm7.2,20.141c-1.05,1.534-2.138,3.063-3.853,3.094-1.686.032-2.229-1-4.154-1s-2.53.969-4.126,1.031c-1.654.062-2.915-1.654-3.973-3.184-2.164-3.125-3.816-8.832-1.6-12.685a6.159,6.159,0,0,1,5.207-3.157c1.628-.03,3.162,1.1,4.154,1.1s2.86-1.353,4.821-1.153a5.876,5.876,0,0,1,4.6,2.494,5.693,5.693,0,0,0-2.719,4.794,5.566,5.566,0,0,0,3.379,5.092A13.988,13.988,0,0,1,32.07,33.407Z" transform="translate(-3.722 -5.155)"/>
+                </svg>
+            </a>
+        </div>
+
+        <a href="" class="modal__recover-pass">Восстановить пароль</a>
+        <div class="modal__hint">Нажимая "Зарегистрироваться", я соглашаюсь с тем, что я прочитал и принял Пользовательское соглашение
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="profileModal" aria-hidden="true">
+    <div class="modal-dialog">
+        <button type="button" class="modal__close" data-bs-dismiss="modal" aria-label="Close">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16.972" height="16.971" viewBox="0 0 16.972 16.971">
+                <g transform="translate(1.414 1.414)">
+                  <line y2="20" transform="translate(14.143 0) rotate(45)" fill="none" stroke="#c1c1c1" stroke-linecap="round" stroke-width="2"/>
+                  <line x2="20" transform="translate(0.002) rotate(45)" fill="none" stroke="#c1c1c1" stroke-linecap="round" stroke-width="2"/>
+                </g>
+            </svg>
+        </button>
+
+        <div class="modal__title display2">Ваш профиль</div>
+        <div class="modal__img">
+            <img src="img/avatar.svg" alt="">
+        </div>
+
+        <form action="" class="modal__form">
+            <fieldset class='form-group'>
+                <input type='text' value="Владимир Горячев" autocomplete="off" />
+            </fieldset>
+            <fieldset class='form-group'>
+                <input type='text' value="me@goryachev.ru" autocomplete="off" />
+            </fieldset>
+            <button class="modal__change-pass">Изменить пароль</button>
+            <fieldset class='form-group'>
+                <input type='text' placeholder="fight-info.ru/username" autocomplete="off" />
+            </fieldset>
+            <button class="modal__form-btn modal__form-btn--small mbtn mbtn-primary">Сохранить</button>
+        </form>
+
+    </div>
+</div>
+
+<div class="modal fade" id="communityModal" aria-hidden="true">
+    <div class="modal-dialog">
+        <button type="button" class="modal__close" data-bs-dismiss="modal" aria-label="Close">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16.972" height="16.971" viewBox="0 0 16.972 16.971">
+                <g transform="translate(1.414 1.414)">
+                  <line y2="20" transform="translate(14.143 0) rotate(45)" fill="none" stroke="#c1c1c1" stroke-linecap="round" stroke-width="2"/>
+                  <line x2="20" transform="translate(0.002) rotate(45)" fill="none" stroke="#c1c1c1" stroke-linecap="round" stroke-width="2"/>
+                </g>
+            </svg>
+        </button>
+
+        <div class="modal__title display2">Новое сообщество</div>
+        <div class="modal__img">
+            <div class="modal__img-upload">
+                <input type="file">
+            </div>
+        </div>
+
+        <form action="" class="modal__form">
+            <fieldset class='form-group'>
+                <input type='text' placeholder="Наименование" autocomplete="off" />
+            </fieldset>
+            <fieldset class='form-group'>
+                <textarea placeholder="Краткое описание"></textarea>
+            </fieldset>
+            <fieldset class='form-group'>
+                <input type='text' placeholder="fight-info.ru/link" autocomplete="off" />
+            </fieldset>
+            <button class="modal__form-btn modal__form-btn--small mbtn mbtn-primary">Создать</button>
+        </form>
+
+    </div>
+</div>
+
+<div class="modal fade" id="communityModal2" aria-hidden="true">
+    <div class="modal-dialog">
+        <button type="button" class="modal__close" data-bs-dismiss="modal" aria-label="Close">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16.972" height="16.971" viewBox="0 0 16.972 16.971">
+                <g transform="translate(1.414 1.414)">
+                  <line y2="20" transform="translate(14.143 0) rotate(45)" fill="none" stroke="#c1c1c1" stroke-linecap="round" stroke-width="2"/>
+                  <line x2="20" transform="translate(0.002) rotate(45)" fill="none" stroke="#c1c1c1" stroke-linecap="round" stroke-width="2"/>
+                </g>
+            </svg>
+        </button>
+
+        <div class="modal__title display2">Новое сообщество</div>
+        <div class="modal__img">
+            <img src="img/community.webp" alt="">
+        </div>
+
+        <form action="" class="modal__form">
+            <fieldset class='form-group'>
+                <input type='text' placeholder="Наименование" autocomplete="off" />
+            </fieldset>
+            <fieldset class='form-group'>
+                <textarea placeholder="Краткое описание"></textarea>
+            </fieldset>
+            <fieldset class='form-group'>
+                <input type='text' placeholder="fight-info.ru/link" autocomplete="off" />
+            </fieldset>
+            <div class="modal__form-buttons">
+                <button class="modal__form-btn modal__form-btn--small mbtn mbtn-primary">Сохранить</button>
+                <button class="modal__form-btn modal__form-btn--small mbtn mbtn-primary2">Удалить</button>
+            </div>
+        </form>
+
+    </div>
+</div>
+
+<!-- <div class="modal-backdrop show"></div> -->

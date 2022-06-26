@@ -1,0 +1,40 @@
+@import "../vars";
+.display2 {
+    font-size: 22px;
+    line-height: 136%;
+    font-weight: 500;
+}
+
+li,
+p {
+    font-size: 17px;
+    line-height: 26px;
+    &:not(:last-child) {
+        margin-bottom: 20px;
+    }
+    a {
+        color: $primary;
+        text-decoration: underline;
+    }
+}
+
+ul {
+    &:not(:last-child) {
+        margin-bottom: 20px;
+    }
+    li {
+        padding-left: 16px;
+        position: relative;
+        &:before {
+            content: '';
+            position: absolute;
+            z-index: 1;
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            background: $black;
+            top: 11px;
+            left: 0;
+        }
+    }
+}

@@ -1,0 +1,20 @@
+@import 'vars';
+html {
+    width: 100%;
+}
+
+body {
+    font-family: $font1;
+    font-weight: 400;
+    color: $black;
+    background: #F0F2F5;
+    &.fixed-body {
+        overflow-y: hidden;
+    }
+}
+
+a {
+    &:hover {
+        color: $primary;
+    }
+}

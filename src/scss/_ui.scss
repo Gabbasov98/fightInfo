@@ -1,0 +1,168 @@
+@import 'vars';
+@import 'components/_text.scss';
+@import 'components/_buttons.scss';
+@import 'components/_fonts.scss';
+input,
+textarea {
+    &::placeholder {
+        color: rgba(#202333, .5);
+    }
+}
+
+.tabs {
+    display: flex;
+    align-items: center;
+}
+
+.tab {
+    display: flex;
+    align-items: center;
+    height: 36px;
+    padding: 0 12px;
+    border-radius: 20px;
+    flex-shrink: 0;
+    white-space: nowrap;
+    margin-right: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    color: rgba($dark, .5);
+    &:hover {
+        color: $dark;
+        cursor: pointer;
+    }
+    &--active {
+        color: $dark;
+        background-color: #fff;
+        pointer-events: none;
+    }
+}
+
+.dropdown {
+    position: absolute;
+    background: #FFFFFF;
+    border-radius: 10px;
+    min-width: 170px;
+    padding: 6px;
+    box-shadow: 0px 3px 5px rgba($black, .03);
+    opacity: 0;
+    pointer-events: none;
+    transition: all .225s;
+    top: 100%;
+    margin-top: 8px;
+    &__item {
+        font-size: 16px;
+        white-space: nowrap;
+        height: 36px;
+        padding: 0 18px;
+        display: flex;
+        align-items: center;
+        border-radius: 6px;
+        &:hover {
+            background: #FAFBFC;
+            color: $black;
+        }
+    }
+}
+
+.copy-alert {
+    position: fixed;
+    top: 100px;
+    right: 100px;
+    background-color: $dark;
+    padding: 24px 32px;
+    border-radius: 12px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 18px;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .225s;
+    &--active {
+        opacity: 1;
+    }
+}
+
+.more-btn {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 500;
+    svg {
+        margin-left: 5px;
+    }
+    &:hover {
+        color: $primary;
+        path {
+            fill: $primary;
+        }
+    }
+}
+
+.form-group {
+    position: relative;
+    margin: 0 0 12px;
+    input,
+    textarea {
+        border: 1px solid $gray;
+        padding: 0 16px;
+        height: 44px;
+        width: 100%;
+        font-size: 16px;
+        background-color: transparent;
+        color: $dark;
+        border-radius: 10px;
+        &::placeholder {
+            color: $gray2;
+        }
+        &:focus {
+            border-color: $dark;
+        }
+    }
+    textarea {
+        padding: 11px 16px;
+        min-height: 150px;
+        resize: none;
+    }
+}
+
+.alerts {
+    position: fixed;
+    top: 98px;
+}
+
+.user-alert {
+    padding: 18px 20px;
+    width: 321px;
+    max-width: 100%;
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 3px rgba($black, .03);
+    z-index: 10;
+    display: flex;
+    font-size: 16px;
+    line-height: 21px;
+    margin-bottom: 15px;
+    &__icon {
+        flex-shrink: 0;
+        margin-right: 13px;
+    }
+    &__text {
+        flex-grow: 1;
+    }
+    &__close {
+        width: 15px;
+        height: 15px;
+        flex-shrink: 0;
+        margin-left: 13px;
+        svg {
+            width: 100%;
+            height: auto;
+        }
+        &:hover {
+            line {
+                stroke: $black;
+            }
+        }
+    }
+}

@@ -1,0 +1,53 @@
+<div class="sidebar">
+    <div class="sidebar__links">
+        <a href="" class="sidebar__link sidebar__link--active">
+            <img src="img/sidebar-icon.svg" alt="">
+            <span>Вся лента</span>
+        </a>
+        <a href="" class="sidebar__link">
+            <img src="img/sidebar-icon2.svg" alt="">
+            <span>Выбрать категории</span>
+        </a>
+        <a href="" class="sidebar__link">
+            <img src="img/sidebar-icon3.svg" alt="">
+            <span>Моя лента</span>
+        </a>
+        <a href="" class="sidebar__link">
+            <img src="img/sidebar-icon4.svg" alt="">
+            <span>Видео</span>
+        </a>
+    </div>
+
+    @@if(comunity === "true"){
+    <div class="sidebar__community">
+        <a href="" class="sidebar__community-item">
+            <img src="img/avatar.webp" alt="">
+            <span>Мага Исмаилов - ЛЫСЫЙ ХИМага Исмаилов - ЛЫСЫЙ ХИ</span>
+        </a>
+        <a href="" class="sidebar__community-item">
+            <img src="img/avatar2.webp" alt="">
+            <span>ACA - Absolute ChampionshipACA - Absolute Championship</span>
+        </a>
+        <a href="" class="sidebar__community-item">
+            <img src="img/avatar3.webp" alt="">
+            <span>TOP DOG - бои на голых кулаTOP DOG - бои на голых кула</span>
+        </a>
+        <a href="" class="sidebar__community-item">
+            <img src="img/avatar4.webp" alt="">
+            <span>Karate.ru: MMA и Бокс</span>
+        </a>
+        <button class="sidebar__community-more more-btn">
+            <span>Показать еще</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="7.92" height="4.646" viewBox="0 0 7.92 4.646">
+                <path d="M13.83,8.7a.666.666,0,0,0-.933,0L10.031,11.57,7.166,8.7a.666.666,0,0,0-.933.933l3.332,3.332a.666.666,0,0,0,.933,0L13.83,9.637a.666.666,0,0,0,0-.933Z" transform="translate(-6.1 -8.514)"/>
+            </svg>
+        </button>
+    </div>
+    }
+    <a href="" class="sidebar__banner">
+        <img src="img/banner.webp" alt="">
+    </a>
+    <div class="sidebar__footer">
+        @@include('_sidebar-footer.html')
+    </div>
+</div>

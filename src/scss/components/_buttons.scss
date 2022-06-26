@@ -1,0 +1,49 @@
+@import "../vars";
+.mbtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all ease-out .225s;
+    padding: 0;
+    &:focus {
+        box-shadow: none;
+    }
+}
+
+.mbtn-primary {
+    background-color: $primary;
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+    &:hover {
+        background-color: darken( $primary, 10%);
+        color: #fff;
+    }
+    &:disabled {
+        background-color: $gray;
+        color: $black;
+        pointer-events: none;
+    }
+}
+
+.mbtn-primary2 {
+    color: $primary;
+    background-color: rgba(#EC4242, .11);
+    font-size: 16px;
+    font-weight: 700;
+    &:hover {
+        color: $primary;
+        background-color: rgba(#EC4242, .21);
+    }
+}
+
+.mbtn-secondary {
+    background-color: $gray;
+    color: $black;
+    font-weight: 700;
+    font-size: 16px;
+    &:hover {
+        background-color: darken( $gray, 10%);
+        color: $black;
+    }
+}

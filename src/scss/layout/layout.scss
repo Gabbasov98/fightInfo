@@ -1,0 +1,218 @@
+@import "_header";
+@import "_footer";
+.wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+}
+
+.layout {
+    flex-grow: 1;
+    &__wrap {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1.1851fr;
+        gap: 82px;
+        padding: 84px 0 24px;
+        min-height: 100vh;
+    }
+}
+
+.container {
+    max-width: 100%;
+    width: 1560px;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    max-width: 300px;
+    &__links {
+        max-width: 264px;
+    }
+    &__link {
+        height: 48px;
+        display: flex;
+        align-items: center;
+        padding: 0 16px;
+        font-size: 16px;
+        font-weight: 700;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        position: relative;
+        &:before {
+            content: '';
+            position: absolute;
+            z-index: 1;
+            left: 45px;
+            top: 100%;
+            margin-top: 5.5px;
+            background: #E1E3E8;
+            width: 192px;
+            height: 1px;
+        }
+        img {
+            margin-right: 10px;
+            flex-shrink: 0;
+        }
+        &--active {
+            pointer-events: none;
+        }
+        &--active,
+        &:hover {
+            background-color: rgba(#fff, .7);
+            color: $black;
+        }
+    }
+    &__banner {
+        display: block;
+        margin-top: 86.5px;
+        img {
+            display: block;
+            width: 100%;
+        }
+    }
+    &__footer {
+        margin-top: auto;
+        padding: 50px 0;
+    }
+    &__link2 {
+        margin-bottom: 8px;
+        display: block;
+        color: rgba(#202333, .7);
+        font-size: 15px;
+        line-height: 20px;
+    }
+    &__socials {
+        display: flex;
+        align-items: center;
+        margin-top: 16px;
+        &-item {
+            margin-right: 17px;
+            &:hover {
+                svg {
+                    transform: scale(1.2);
+                }
+                path {
+                    fill: $black;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+    &__community {
+        margin-top: 40px;
+        padding-right: 12px;
+        &-item {
+            display: flex;
+            align-items: center;
+            font-size: 16px;
+            margin-bottom: 16px;
+            img {
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                display: block;
+                margin-right: 12px;
+            }
+            span {
+                width: calc(100% - 42px);
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
+        }
+        &-more {
+            margin-top: 20px;
+        }
+    }
+}
+
+.info-sidebar {
+    padding-right: 67px;
+    height: 100%;
+}
+
+.auth-block {
+    box-shadow: 0px 2px 3px rgba($black, .03);
+    background-color: #fff;
+    padding: 16px;
+    border-radius: 20px;
+    margin-bottom: 45px;
+    &__img {
+        display: block;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
+    &__desc {
+        margin: 12px 0 17px;
+        color: rgba($dark, .7);
+        font-size: 15px;
+        margin-top: 12px;
+        max-width: 231px;
+    }
+    &__btn {
+        width: 100%;
+        height: 44px;
+        border-radius: 40px;
+        margin-top: 10px;
+    }
+}
+
+.sidebar-news {
+    max-width: 288px;
+    &__title {
+        font-weight: 700;
+    }
+    .news-card2 {
+        margin-top: 20px;
+    }
+    &__more {
+        margin-top: 16px;
+    }
+}
+
+.comunity-block {
+    text-align: center;
+    background-color: #fff;
+    padding: 16px 24px 24px;
+    border-radius: 20px;
+    margin-bottom: 45px;
+    box-shadow: 0px 2px 3px rgba($black, .03);
+    &__img {
+        display: block;
+        width: 94px;
+        height: 94px;
+        border-radius: 50%;
+        margin: 0 auto;
+    }
+    &__title {
+        margin-top: 18px;
+    }
+    &__desc {
+        margin-top: 12px;
+        font-size: 15px;
+        line-height: 21px;
+    }
+    &__btn {
+        margin: 20px auto 0;
+        width: 140px;
+        height: 36px;
+        border-radius: 20px;
+        font-size: 15px;
+        font-weight: 500;
+        img {
+            margin-right: 6px;
+            flex-shrink: 0;
+        }
+    }
+    &__num {
+        margin-top: 16px;
+        font-size: 15px;
+        color: rgba($dark, .7);
+    }
+}
